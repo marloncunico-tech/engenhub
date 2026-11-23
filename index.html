@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engenhub – Sistemas de engenharia, conectados</title>
+<meta name="description" content="Consultoria Aras Innovator, implantação de Dolibarr, EspoCRM e OpenProject, BI, IA aplicada e infraestrutura em nuvem gerenciada para indústria.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 108 108%27%3E%3Cpolygon points=%2750,4 10.2,27 10.2,73 50,96 89.8,73 89.8,27%27 fill=%27none%27 stroke=%27%231D3557%27 stroke-width=%278%27 stroke-linejoin=%27round%27/%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2716%27 fill=%27%232A9D8F%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/engenhub.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Engenhub, início">
+      <svg viewBox="-4 -4 108 108" aria-hidden="true">
+        <polygon points="50,4 10.2,27 10.2,73 50,96 89.8,73 89.8,27" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/>
+        <line x1="50" y1="50" x2="50" y2="10" stroke="#8FB8D6" stroke-width="6"/><line x1="50" y1="50" x2="15.4" y2="70" stroke="#8FB8D6" stroke-width="6"/><line x1="50" y1="50" x2="84.6" y2="70" stroke="#8FB8D6" stroke-width="6"/>
+        <circle cx="50" cy="10" r="7" fill="#FFFFFF"/><circle cx="15.4" cy="70" r="7" fill="#FFFFFF"/><circle cx="84.6" cy="70" r="7" fill="#FFFFFF"/>
+        <circle cx="50" cy="50" r="13" fill="#2A9D8F"/>
+      </svg>
+      <b>engen<span>hub</span></b>
+    </a>
+    <nav class="main" aria-label="Seções">
+      <a href="aras.html">Aras</a>
+      <a href="dolibarr.html">Dolibarr</a>
+      <a href="espocrm.html">EspoCRM</a>
+      <a href="openproject.html">OpenProject</a>
+      <a href="#ia">IA</a>
+      <a href="#bi">BI</a>
+      <a href="#nuvem">Nuvem</a>
+      <a href="#precos">Preços</a>
+                </nav>
+    <a class="btn btn-teal" href="#orcamento">Agendar diagnóstico</a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="hero" aria-labelledby="h-hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker" style="color:#7FD3C8">PLM · ERP · CRM · Projetos · BI · IA · Nuvem</p>
+      <h1 id="h-hero" style="margin-top:14px">Sua engenharia<br>fora das planilhas.<br><em>Conectada e com IA.</em></h1>
+      <p class="lead">Consultoria Aras Innovator e implantação de Dolibarr, EspoCRM e OpenProject, ligados num só fluxo de dados. Por cima, painéis de BI e assistentes de IA que leem os seus sistemas, rodando em nuvem gerenciada com backup testado.</p>
+      <div class="ctas">
+        <a class="btn btn-teal" href="#orcamento">Diagnóstico gratuito de 45 min</a>
+        <a class="btn btn-ghost" href="#simulador">Simular investimento</a>
+      </div>
+      <div class="chips">
+        <span class="chip"><b>Sem</b> licença por usuário (open source)</span>
+        <span class="chip">Aras sobre a <b>sua</b> licença</span>
+        <span class="chip">Dados em <b>nuvem no Brasil</b> ou no seu servidor</span>
+      </div>
+      <div class="hero-stats">
+        <div><b class="num">30 dias</b><small>da planilha ao ERP no ar</small></div>
+        <div><b class="num">99,5%</b><small>SLA da infraestrutura</small></div>
+        <div><b class="num">24×7</b><small>monitoramento e backup diário</small></div>
+      </div>
+    </div>
+    <div class="hubbox" aria-hidden="true">
+      <svg viewBox="0 0 560 560" id="hub">
+        <circle class="ring" cx="280" cy="280" r="250"/>
+        <circle class="ring" cx="280" cy="280" r="190" style="stroke-dasharray:3 6"/>
+        <g id="spokes"></g>
+        <g id="pulses"></g>
+        <g transform="translate(280 280)">
+          <polygon points="0,-62 -53.7,-31 -53.7,31 0,62 53.7,31 53.7,-31" fill="#12233A" stroke="#FFFFFF" stroke-width="7" stroke-linejoin="round"/>
+          <line x1="0" y1="0" x2="0" y2="-52" stroke="#8FB8D6" stroke-width="5"/><line x1="0" y1="0" x2="-45" y2="26" stroke="#8FB8D6" stroke-width="5"/><line x1="0" y1="0" x2="45" y2="26" stroke="#8FB8D6" stroke-width="5"/>
+          <circle cx="0" cy="-52" r="7" fill="#FFF"/><circle cx="-45" cy="26" r="7" fill="#FFF"/><circle cx="45" cy="26" r="7" fill="#FFF"/>
+          <circle r="15" fill="#2A9D8F"><animate attributeName="r" values="14;17;14" dur="2.4s" repeatCount="indefinite"/></circle>
+        </g>
+        <g id="nodes"></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="plataformas" aria-labelledby="h-plat">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Plataformas que implantamos</p>
+      <h2 id="h-plat">Quatro sistemas maduros. Um fluxo de dados só.</h2>
+      <p class="lead">Escolhemos software aberto ou consolidado, que não prende você a um fornecedor. Implantamos, desenhamos os processos, integramos e operamos. Cada sistema já sai com um ponto de IA e um painel de BI ligados.</p>
+    </div>
+    <div class="plats">
+      <article class="plat">
+        <figure><img src="img/aras-engenharia.jpg" alt="Engenheiro analisando modelo 3D de satélite e curvas de engenharia em monitores" loading="lazy"><figcaption>Imagem: aras.com</figcaption></figure>
+        <div class="body">
+          <a class="tag" href="aras.html" style="text-decoration:none">PLM · Aras Innovator ↗</a>
+          <h3>Engenharia de produto sob controle: BOM, ECO, documentos e configuração.</h3>
+          <ul>
+            <li>Desenho de processos PLM em português, com pacote fechado</li>
+            <li>Customização de ItemTypes, workflows, ciclos de vida e permissões</li>
+            <li>Integração da BOM de engenharia com o ERP (BOM de manufatura)</li>
+          </ul>
+          <p class="ai"><b>IA:</b> busca em linguagem natural nos documentos e peças, análise de impacto de ECO e sugestão de itens similares para evitar códigos duplicados.</p>
+          <p class="price">Desenho de processos a partir de <b>R$ 9.900</b> · licença Aras é do cliente</p>
+          <a class="more" href="aras.html">Ver detalhamento completo →</a>
+        </div>
+      </article>
+      <article class="plat">
+        <figure><img src="img/dolibarr-dashboard.jpg" alt="Painel do Dolibarr com propostas, faturas, pedidos de compra e gráficos de vendas" loading="lazy"><figcaption>Imagem: dolibarr.org</figcaption></figure>
+        <div class="body">
+          <a class="tag" href="dolibarr.html" style="text-decoration:none">ERP · Dolibarr ↗</a>
+          <h3>Pedidos, compras, estoque, faturamento e centros de custo, sem licença por usuário.</h3>
+          <ul>
+            <li>Implantação com cadastro migrado das suas planilhas</li>
+            <li>Módulos de produção (OF), estoque multi-depósito e NF-e via integração</li>
+            <li>Centros de custo e relatórios por unidade de negócio</li>
+          </ul>
+          <p class="ai"><b>IA:</b> leitura automática de NF e pedidos de compra em PDF, conciliação sugerida e previsão de demanda para reposição de estoque.</p>
+          <p class="price">Implantação Essencial <b>R$ 6.900</b> · hora técnica R$ 180</p>
+          <a class="more" href="dolibarr.html">Ver detalhamento completo →</a>
+        </div>
+      </article>
+      <article class="plat">
+        <figure><img src="img/espocrm-bpm.jpg" alt="Editor de fluxo BPM do EspoCRM com eventos, gateways e tarefas" loading="lazy" style="object-fit:contain;background:#F4F8FB"><figcaption>Imagem: espocrm.com</figcaption></figure>
+        <div class="body">
+          <a class="tag" href="espocrm.html" style="text-decoration:none">CRM · EspoCRM ↗</a>
+          <h3>Funil comercial B2B em português, com automação de processos e e-mail.</h3>
+          <ul>
+            <li>Pipelines por linha de negócio, cotações e contratos</li>
+            <li>Fluxos BPM: follow-up, aprovação de desconto, pós-venda</li>
+            <li>Integração com ERP (cliente, pedido, faturamento) e WhatsApp</li>
+          </ul>
+          <p class="ai"><b>IA:</b> resumo do histórico do cliente antes da reunião, pontuação de leads e rascunho de proposta a partir da conversa.</p>
+          <p class="price">Implantação Essencial <b>R$ 6.900</b> · sem custo em dólar</p>
+          <a class="more" href="espocrm.html">Ver detalhamento completo →</a>
+        </div>
+      </article>
+      <article class="plat">
+        <figure><img src="img/openproject-gantt.jpg" alt="Gráfico de Gantt do OpenProject com fases, marcos e dependências" loading="lazy"><figcaption>Imagem: openproject.org</figcaption></figure>
+        <div class="body">
+          <a class="tag" href="openproject.html" style="text-decoration:none">Projetos · OpenProject ↗</a>
+          <h3>Gantt, quadros ágeis, apontamento de horas e custos por projeto.</h3>
+          <ul>
+            <li>Modelos de projeto para engenharia, obras e P&amp;D</li>
+            <li>Horas apontadas viram custo no ERP e margem no BI</li>
+            <li>Portal para o cliente acompanhar entregas</li>
+          </ul>
+          <p class="ai"><b>IA:</b> relatório semanal de status escrito sozinho, alerta de atraso no caminho crítico e estimativa de esforço com base em projetos anteriores.</p>
+          <p class="price">Implantação Essencial <b>R$ 6.900</b> · integrada com ERP e CRM</p>
+          <a class="more" href="openproject.html">Ver detalhamento completo →</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="sec-head" style="margin:56px 0 18px">
+      <h3 style="font-size:1.35rem">O fio digital da empresa</h3>
+      <p class="lead">Cada dado nasce uma vez e segue adiante. Nada é redigitado.</p>
+    </div>
+    <div class="thread">
+      <div><b>CRM</b>Oportunidade e proposta aprovada</div>
+      <div><b>PLM</b>Produto, BOM e revisão liberados</div>
+      <div><b>Projetos</b>Plano, horas e marcos</div>
+      <div><b>ERP</b>Compra, produção e faturamento</div>
+      <div style="border-color:var(--teal)"><b>BI + IA</b>Margem real, alertas e respostas</div>
+    </div>
+    <h3 style="margin-top:48px;font-size:1.35rem">Detalhamento por sistema</h3>
+    <div class="sysnav"><a class="oth" href="aras.html"><small>PLM</small><b>Aras Innovator</b><span>Módulos, processo, integrações, IA, BI, infraestrutura e preços</span></a><a class="oth" href="dolibarr.html"><small>ERP</small><b>Dolibarr</b><span>Módulos, processo, integrações, IA, BI, infraestrutura e preços</span></a><a class="oth" href="espocrm.html"><small>CRM</small><b>EspoCRM</b><span>Módulos, processo, integrações, IA, BI, infraestrutura e preços</span></a><a class="oth" href="openproject.html"><small>Projetos</small><b>OpenProject</b><span>Módulos, processo, integrações, IA, BI, infraestrutura e preços</span></a></div>
+  </div>
+</section>
+
+<section id="ia" class="alt" aria-labelledby="h-ia">
+  <div class="wrap pillar">
+    <div>
+      <p class="kicker">Inteligência artificial aplicada</p>
+      <h2 id="h-ia" style="margin-top:10px">Pergunte ao seu ERP, PLM e CRM. Em português.</h2>
+      <p class="lead" style="margin-top:14px">Conectamos modelos de linguagem aos seus sistemas com permissões de cada usuário. A IA consulta dados reais, cita a fonte e executa tarefas repetitivas. Não é um chatbot genérico: é um assistente que conhece a sua BOM, os seus pedidos e os seus clientes.</p>
+      <div class="uses">
+        <div class="use"><h3><span class="ic">⌕</span>Busca em documentos</h3><p>Normas, desenhos, especificações e ECOs do Aras respondidos com a referência do documento.</p></div>
+        <div class="use"><h3><span class="ic">⎘</span>Leitura de NF e pedidos</h3><p>PDF ou XML entra, lançamento sai pronto para conferência no Dolibarr.</p></div>
+        <div class="use"><h3><span class="ic">◷</span>Status de projeto</h3><p>Relatório semanal gerado do OpenProject, com riscos e atrasos destacados.</p></div>
+        <div class="use"><h3><span class="ic">✦</span>Comercial assistido</h3><p>Resumo do cliente, próximos passos e rascunho de proposta no EspoCRM.</p></div>
+        <div class="use"><h3><span class="ic">↯</span>Agentes de rotina</h3><p>Cobrança de aprovações, follow-up de cotação e conferência de estoque mínimo.</p></div>
+        <div class="use"><h3><span class="ic">◈</span>Previsão</h3><p>Demanda, prazo de entrega e fluxo de caixa a partir do histórico.</p></div>
+      </div>
+      <div class="offer"><span>Integração com IA</span><span class="p num">R$ 6.900</span><span>setup +</span><span class="p num">R$ 290/mês</span><span class="note">+ consumo de API do modelo, repassado sem margem</span></div>
+      <p class="guard"><span style="color:var(--hi)">🔒</span><span>Os dados ficam no seu ambiente. Usamos provedores com contrato que proíbe treino com seus dados, ou modelos abertos rodando na sua própria VM. Toda resposta respeita o perfil de acesso de quem pergunta e fica registrada.</span></p>
+    </div>
+    <div class="chat" id="chat" aria-label="Exemplo de conversa com o assistente">
+      <div class="bar"><i></i> Assistente Engenhub · conectado a Aras, Dolibarr, OpenProject</div>
+      <div class="msg u">Quais ECOs abertos afetam o conjunto 4100-A e quanto temos em estoque das peças envolvidas?</div>
+      <div class="msg a">Há <b>2 ECOs abertos</b> que afetam o 4100-A:
+        <table><tr><td>ECO-0187 · troca do rolamento 6204</td><td>32 un.</td></tr><tr><td>ECO-0191 · nova chapa base rev. C</td><td>0 un.</td></tr></table>
+        A chapa rev. C não tem pedido de compra. Quer que eu abra uma solicitação no Dolibarr?
+        <small>Fontes: Aras › ECO-0187, ECO-0191 · Dolibarr › Estoque, depósito CWB</small></div>
+      <div class="msg u">Sim, 20 unidades, fornecedor habitual.</div>
+      <div class="msg a">Solicitação <b>SC-2611-014</b> criada para 20 un. no fornecedor Metalúrgica Alfa, aguardando sua aprovação. Também avisei a tarefa “Liberação rev. C” no OpenProject.
+        <small>Ações: Dolibarr › SC-2611-014 · OpenProject › #642</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="bi" aria-labelledby="h-bi">
+  <div class="wrap pillar rev">
+    <div>
+      <p class="kicker">BI de dados</p>
+      <h2 id="h-bi" style="margin-top:10px">Um painel com a empresa inteira, atualizado sozinho.</h2>
+      <p class="lead" style="margin-top:14px">Juntamos ERP, CRM, projetos e PLM num banco analítico e entregamos os indicadores que a diretoria pede toda segunda-feira. Sem exportar planilha, sem números diferentes em cada área.</p>
+      <div class="uses">
+        <div class="use"><h3><span class="ic">%</span>Margem real</h3><p>Por pedido, projeto, cliente e centro de custo, com horas apontadas.</p></div>
+        <div class="use"><h3><span class="ic">⇢</span>Funil e previsão</h3><p>Conversão por etapa, ciclo de venda e receita prevista do trimestre.</p></div>
+        <div class="use"><h3><span class="ic">⌚</span>Entrega no prazo</h3><p>OTD, atrasos por fornecedor e lead time de ECO até a produção.</p></div>
+        <div class="use"><h3><span class="ic">$</span>Caixa</h3><p>Contas a receber e a pagar, inadimplência e projeção de 90 dias.</p></div>
+      </div>
+      <div class="offer"><span>BI de dados</span><span class="p num">R$ 2.900</span><span>setup +</span><span class="p num">R$ 490/mês</span><span class="note">Metabase ou Power BI, alertas por e-mail e WhatsApp</span></div>
+      <figure class="shot"><img src="img/espocrm-relatorio.jpg" alt="Gráfico de receita mensal em relatório do EspoCRM" style="max-height:220px;object-fit:cover;object-position:center"><figcaption>Relatório nativo · imagem: espocrm.com</figcaption></figure>
+    </div>
+    <div class="dash" aria-label="Exemplo de painel de BI">
+      <div class="hd"><b>Diretoria · novembro</b><span>atualizado há 6 min</span></div>
+      <div class="kpis">
+        <div class="kpi"><small>Faturamento</small><b class="num">R$ 1,24 mi</b><em>▲ 8,2% mês</em></div>
+        <div class="kpi"><small>Margem bruta</small><b class="num">31,4%</b><em>▲ 1,1 p.p.</em></div>
+        <div class="kpi"><small>Entrega no prazo</small><b class="num">92%</b><em class="dn">▼ 3 p.p.</em></div>
+        <div class="kpi"><small>Funil ponderado</small><b class="num">R$ 3,8 mi</b><em>▲ 12%</em></div>
+      </div>
+      <div class="dgrid">
+        <div class="panel"><small>Receita × custo por mês (R$ mil)</small>
+          <svg viewBox="0 0 300 140" id="barc" role="img" aria-label="Barras de receita e linha de custo por mês"></svg></div>
+        <div class="panel"><small>Margem por linha</small>
+          <svg viewBox="0 0 160 140" id="donut" role="img" aria-label="Rosca de margem por linha"></svg></div>
+      </div>
+      <div class="src"><span>Dolibarr</span><span>EspoCRM</span><span>OpenProject</span><span>Aras</span><span>Planilhas legadas</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="nuvem" class="alt" aria-labelledby="h-nuvem">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Nuvem e infraestrutura gerenciada</p>
+      <h2 id="h-nuvem">Seus sistemas no ar, com backup que já foi testado.</h2>
+      <p class="lead">Escolha onde os dados moram. Nós cuidamos de atualização, monitoramento, segurança e backup, com mensalidade fixa. Serve para os sistemas que implantamos e para os que você já tem.</p>
+    </div>
+    <svg class="cloudmap" viewBox="0 0 1100 230" role="img" aria-label="Arquitetura: usuários acessam por túnel seguro a VM em nuvem, servidor Zirconium ou servidor local; backup criptografado vai para outro local">
+      <rect class="box" x="10" y="80" width="170" height="70" rx="12"/><text class="t" x="28" y="110">Usuários e equipe</text><text class="s" x="28" y="130">navegador, celular, VPN zero</text>
+      <path class="ln" d="M180 115 H300"/>
+      <rect class="box" x="300" y="80" width="180" height="70" rx="12" style="stroke:var(--teal)"/><text class="t" x="318" y="110">Túnel seguro + SSO</text><text class="s" x="318" y="130">sistemas.suaempresa.com.br</text>
+      <path class="ln" d="M480 115 C520 115 520 40 560 40"/><path class="ln" d="M480 115 H560"/><path class="ln" d="M480 115 C520 115 520 190 560 190"/>
+      <rect class="box" x="560" y="10" width="230" height="58" rx="12"/><text class="t" x="578" y="36">VM em nuvem (Brasil)</text><text class="s" x="578" y="54">2 a 8 vCPU · escala sob demanda</text>
+      <rect class="box" x="560" y="86" width="230" height="58" rx="12"/><text class="t" x="578" y="112">Servidor Zirconium (remoto)</text><text class="s" x="578" y="130">menor custo mensal</text>
+      <rect class="box" x="560" y="162" width="230" height="58" rx="12"/><text class="t" x="578" y="188">Servidor local, gestão remota</text><text class="s" x="578" y="206">dados dentro da empresa</text>
+      <path class="ln bk" d="M790 40 C840 40 840 115 880 115"/><path class="ln bk" d="M790 115 H880"/><path class="ln bk" d="M790 190 C840 190 840 115 880 115"/>
+      <rect class="box" x="880" y="80" width="210" height="70" rx="12" style="stroke:var(--teal)"/><text class="t" x="898" y="110">Backup externo cifrado</text><text class="s" x="898" y="130">diário · restauração testada</text>
+    </svg>
+    <div class="deploy" style="margin-top:26px">
+      <div class="dep hot">
+        <h3>VM em nuvem</h3>
+        <p class="pr num">R$ 290<small> /mês · P</small></p>
+        <ul><li>M (4 vCPU/8 GB): R$ 540</li><li>G (8 vCPU/16 GB): R$ 990</li><li>Subdomínio próprio e escala sem trocar de máquina</li></ul>
+      </div>
+      <div class="dep">
+        <h3>Servidor Zirconium</h3>
+        <p class="pr num">R$ 190<small> /mês · P</small></p>
+        <ul><li>M: R$ 340 · G: R$ 590</li><li>Hospedado na nossa operação, acesso por túnel</li><li>Melhor custo para PME</li></ul>
+      </div>
+      <div class="dep">
+        <h3>Servidor local gerenciado</h3>
+        <p class="pr num">R$ 390<small> /mês por servidor</small></p>
+        <ul><li>Seu hardware, nossa gestão remota</li><li>Mini-servidor em locação: R$ 260/mês (36 meses)</li><li>Ideal para dados que não podem sair da empresa</li></ul>
+      </div>
+    </div>
+    <div class="incl">
+      <span>Patches de sistema</span><span>Monitoramento 24×7</span><span>Backup local diário (7 dias)</span><span>SLA 99,5%</span><span>Backup externo R$ 0,50/GB/mês</span><span>Setup único R$ 690</span><span>Contrato com cláusulas LGPD</span>
+    </div>
+  </div>
+</section>
+
+<section id="precos" aria-labelledby="h-precos">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Preços de consultoria</p>
+      <h2 id="h-precos">Preço fechado para projeto, hora avulsa para o resto.</h2>
+    </div>
+    <div class="tblwrap">
+    <table class="tbl">
+      <thead><tr><th>Serviço</th><th>Modelo</th><th style="text-align:right">Preço</th></tr></thead>
+      <tbody>
+        <tr><td>Implantação Essencial · 1 sistema, até 10 usuários (~40 h)</td><td>Projeto</td><td class="r">R$ 6.900</td></tr>
+        <tr><td>Implantação Integrada · ERP + CRM + Projetos (~100 h)</td><td>Projeto</td><td class="r">R$ 16.900</td></tr>
+        <tr><td>Aras · Desenho de processos PLM (~40 h)</td><td>Projeto</td><td class="r">R$ 9.900</td></tr>
+        <tr><td>Aras · Implantação/customização por módulo (80–160 h)</td><td>Projeto</td><td class="r">R$ 19.900 a 39.900</td></tr>
+        <tr><td>BI de dados</td><td>Setup + assinatura</td><td class="r">R$ 2.900 + R$ 490/mês</td></tr>
+        <tr><td>Integração com IA</td><td>Setup + assinatura</td><td class="r">R$ 6.900 + R$ 290/mês</td></tr>
+        <tr><td>Treinamento · 4 h, até 8 pessoas</td><td>Avulso</td><td class="r">R$ 1.200</td></tr>
+        <tr><td>Banco de 20 h de customização</td><td>Pré-pago</td><td class="r">R$ 3.400 · Aras R$ 4.800</td></tr>
+        <tr><td>Suporte Básico (4 h) / Pro (10 h) / Aras (8 h)</td><td>Assinatura</td><td class="r">R$ 690 / 1.590 / 1.990</td></tr>
+        <tr><td>Sustentação por usuário</td><td>Assinatura</td><td class="r">R$ 25/usuário/mês (mín. R$ 250)</td></tr>
+        <tr><td>Hora técnica · Dolibarr, EspoCRM, OpenProject / Aras</td><td>Avulso</td><td class="r">R$ 180 / R$ 260</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="pack">
+      <div><small>Pacote recomendado</small><h3 style="font-size:1.4rem;margin-top:4px">Stack Indústria</h3><small>Implantação Integrada + VM M em nuvem + Suporte Básico</small></div>
+      <div style="text-align:right"><b class="big num">R$ 1.230/mês</b><br><small>após o setup de R$ 16.900 · sem licença por usuário</small></div>
+      <a class="btn btn-teal" href="#simulador" data-preset="stack">Simular este pacote</a>
+    </div>
+  </div>
+</section>
+
+<section id="simulador" class="alt" aria-labelledby="h-sim">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Simulador</p>
+      <h2 id="h-sim">Monte sua stack e veja o investimento.</h2>
+      <p class="lead">Valores de referência. A proposta final sai depois do diagnóstico de 45 minutos.</p>
+    </div>
+    <div class="sim">
+      <form class="card" id="simf" onsubmit="return false">
+        <fieldset><legend>Sistemas</legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="sys" value="erp" checked><span>ERP Dolibarr<small>pedidos, estoque, faturamento</small></span></label>
+            <label class="opt"><input type="checkbox" name="sys" value="crm"><span>CRM EspoCRM<small>funil, propostas, automação</small></span></label>
+            <label class="opt"><input type="checkbox" name="sys" value="proj"><span>Projetos OpenProject<small>Gantt, horas, custos</small></span></label>
+            <label class="opt"><input type="checkbox" id="aras"><span>PLM Aras Innovator<small>licença do cliente</small></span></label>
+          </div>
+          <div class="row" style="margin-top:10px" id="arasRow" hidden>
+            <label class="f">Módulos Aras a customizar<input type="number" id="arasMod" min="0" max="8" value="0"></label>
+            <label class="f">Complexidade por módulo<select id="arasCx"><option value="19900">Padrão (~80 h)</option><option value="29900">Média (~120 h)</option><option value="39900">Alta (~160 h)</option></select></label>
+          </div>
+        </fieldset>
+        <fieldset><legend>Dados e inteligência</legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" id="bi" checked><span>BI de dados<small>painéis e alertas</small></span></label>
+            <label class="opt"><input type="checkbox" id="ia"><span>Integração com IA<small>assistente e automações</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset><legend>Infraestrutura</legend>
+          <div class="row">
+            <label class="f">Onde rodar<select id="infra">
+              <option value="none">Já tenho infraestrutura</option>
+              <option value="vmP">VM em nuvem P · R$ 290</option>
+              <option value="vmM" selected>VM em nuvem M · R$ 540</option>
+              <option value="vmG">VM em nuvem G · R$ 990</option>
+              <option value="zP">Servidor Zirconium P · R$ 190</option>
+              <option value="zM">Servidor Zirconium M · R$ 340</option>
+              <option value="zG">Servidor Zirconium G · R$ 590</option>
+              <option value="loc">Servidor local gerenciado · R$ 390</option>
+              <option value="locR">Local + mini-servidor em locação · R$ 650</option>
+            </select></label>
+            <label class="f">Backup externo (GB)<input type="number" id="bk" min="0" step="10" value="100"></label>
+          </div>
+        </fieldset>
+        <fieldset style="margin-bottom:0"><legend>Pessoas e suporte</legend>
+          <div class="row">
+            <label class="f">Usuários<input type="number" id="users" min="1" value="10"></label>
+            <label class="f">Turmas de treinamento<input type="number" id="trein" min="0" value="1"></label>
+            <label class="f">Suporte<select id="sup">
+              <option value="0">Sem plano</option>
+              <option value="690" selected>Básico · 4 h · R$ 690</option>
+              <option value="1590">Pro · 10 h · R$ 1.590</option>
+              <option value="1990">Aras · 8 h · R$ 1.990</option>
+            </select></label>
+          </div>
+        </fieldset>
+      </form>
+      <aside class="card total" aria-live="polite">
+        <div><small class="note">Investimento inicial</small><div class="big num" id="tSetup">—</div></div>
+        <div><small class="note">Mensal recorrente</small><div class="big num" id="tMes" style="color:var(--hi)">—</div></div>
+        <div class="lines" id="tLines"></div>
+        <p class="note" id="tNote"></p>
+        <a class="btn btn-primary" href="#orcamento" id="useSim">Pedir proposta com esta stack</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="como" aria-labelledby="h-como">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Como trabalhamos</p><h2 id="h-como">Do diagnóstico à operação, em quatro passos.</h2></div>
+    <div class="steps">
+      <div class="step"><h3>Diagnóstico</h3><p>45 minutos, gratuito. Mapeamos processos, sistemas atuais e onde a planilha está doendo.</p></div>
+      <div class="step"><h3>Desenho</h3><p>Fluxos, cadastros, integrações e indicadores definidos. Preço fechado antes de começar.</p></div>
+      <div class="step"><h3>Implantação</h3><p>Ambiente no ar, dados migrados, IA e BI ligados, equipe treinada. Entregas semanais.</p></div>
+      <div class="step"><h3>Operação</h3><p>Suporte, backup, monitoramento e melhoria contínua por mensalidade fixa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="alt" aria-labelledby="h-faq">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Dúvidas</p><h2 id="h-faq">Perguntas frequentes</h2></div>
+    <details><summary>Vocês vendem a licença do Aras Innovator?</summary><p>Não. A licença e a assinatura são contratadas pelo cliente diretamente com a Aras. Nós fazemos o desenho de processos, a customização, as integrações e o suporte em português.</p></details>
+    <details><summary>Open source é seguro para a minha empresa?</summary><p>Dolibarr, EspoCRM e OpenProject têm anos de uso em empresas no mundo todo e código auditável. Mantemos as versões atualizadas, com patches de segurança, backup diário e acesso por túnel com autenticação única.</p></details>
+    <details><summary>A IA vai usar os dados da empresa para treinar modelos?</summary><p>Não. Usamos provedores com contrato que proíbe esse uso ou modelos abertos rodando na sua VM. O assistente só enxerga o que o usuário que pergunta pode ver, e cada consulta fica registrada.</p></details>
+    <details><summary>Posso começar só com um sistema?</summary><p>Sim. A Implantação Essencial cobre um sistema para até 10 usuários. Os demais entram depois, já integrados ao primeiro.</p></details>
+    <details><summary>Consigo levar meus dados embora se sair?</summary><p>Sim. Os sistemas são abertos e o banco de dados é seu. Entregamos exportação completa e o procedimento de restauração documentado.</p></details>
+    <details><summary>Atendem fora de Curitiba?</summary><p>Sim. Diagnóstico, implantação e suporte são remotos. Visitas presenciais em Curitiba e região são combinadas no projeto.</p></details>
+  </div>
+</section>
+
+<section id="orcamento" aria-labelledby="h-orc">
+  <div class="wrap contact">
+    <div class="cinfo">
+      <p class="kicker">Contato</p>
+      <h2 id="h-orc">Agende o diagnóstico gratuito.</h2>
+      <p class="lead">Conte o cenário em poucas linhas. Respondemos em até 1 dia útil com horários para a conversa de 45 minutos.</p>
+      <div><small>E-mail</small><b><a href="mailto:contato@zirconiumlabs.com" style="color:inherit">contato@zirconiumlabs.com</a></b></div>
+      <div><small>WhatsApp</small><b class="num"><a href="https://wa.me/5541996704747" style="color:inherit">+55 41 99670-4747</a></b></div>
+      <div><small>Base</small><b>Curitiba/PR · atendimento remoto em todo o Brasil</b></div>
+    </div>
+    <form class="card" id="cform" novalidate>
+      <div class="row">
+        <label class="f">Nome*<input type="text" id="cn" required autocomplete="name"></label>
+        <label class="f">E-mail*<input type="email" id="ce" required autocomplete="email"></label>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <label class="f">Empresa<input type="text" id="cc" autocomplete="organization"></label>
+        <label class="f">Telefone/WhatsApp<input type="tel" id="cp" autocomplete="tel"></label>
+      </div>
+      <div class="row" style="margin-top:12px">
+        <label class="f">Interesse<select id="ci">
+          <option>Diagnóstico geral</option><option>Aras Innovator (PLM)</option><option>ERP Dolibarr</option><option>CRM EspoCRM</option>
+          <option>OpenProject</option><option>BI de dados</option><option>Integração com IA</option><option>Nuvem / infraestrutura / backup</option>
+        </select></label>
+        <label class="f">Nº de usuários<input type="number" id="cu" min="1" placeholder="ex.: 15"></label>
+      </div>
+      <label class="f" style="margin-top:12px">Cenário atual e objetivo<textarea id="cm" placeholder="Ex.: usamos planilhas para pedidos e compras, Aras só para documentos; queremos BOM integrada ao ERP e um painel de margem."></textarea></label>
+      <label class="f" style="margin-top:12px">Anexos opcionais (planilhas, fluxos, prints)<input type="file" id="cf" multiple></label>
+      <p class="files" id="simTag" hidden></p>
+      <p style="margin-top:16px"><button class="btn btn-primary" type="submit" id="sendBtn">Enviar e agendar</button></p>
+      <p class="sendmsg" id="sendmsg" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Engenhub, voltar ao início">
+      <svg viewBox="-4 -4 108 108" aria-hidden="true" style="width:26px;height:26px"><polygon points="50,4 10.2,27 10.2,73 50,96 89.8,73 89.8,27" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linejoin="round"/><circle cx="50" cy="50" r="15" fill="#2A9D8F"/></svg>
+      <b>engen<span>hub</span></b>
+    </a>
+    <span><a href="aras.html" style="color:inherit">Aras Innovator</a> · <a href="dolibarr.html" style="color:inherit">Dolibarr</a> · <a href="espocrm.html" style="color:inherit">EspoCRM</a> · <a href="openproject.html" style="color:inherit">OpenProject</a></span>
+    <span>Engenhub Sistemas · uma operação Zirconium</span>
+    <span>Sistemas de engenharia, conectados.</span>
+    <span class="tm">Aras Innovator, Dolibarr, EspoCRM e OpenProject são marcas de seus respectivos titulares. As telas exibidas foram obtidas dos sites oficiais e são ilustrativas. A Engenhub é consultoria independente e não revende licenças Aras.</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const EMAIL = "contato@zirconiumlabs.com";
+  const $ = id => document.getElementById(id);
+  const brl = v => "R$ " + Math.round(v).toLocaleString("pt-BR");
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // ---------- hero: hub ligando os sistemas ----------
+  const NODES = [["PLM","Aras Innovator"],["ERP","Dolibarr"],["CRM","EspoCRM"],["Projetos","OpenProject"],["BI","painéis"],["IA","assistentes"],["Nuvem","VM · backup"]];
+  const C = 280, R = 210, sp = $("spokes"), nd = $("nodes"), pu = $("pulses"), paths = [];
+  NODES.forEach(([t, s], i) => {
+    const a = -Math.PI/2 + i * 2*Math.PI/NODES.length, x = C + R*Math.cos(a), y = C + R*Math.sin(a);
+    const d = `M${C} ${C} L${x.toFixed(1)} ${y.toFixed(1)}`; paths.push(d);
+    el("path", {d, class:"spoke"}, sp);
+    const g = el("g", {class:"hub-node" + (i >= 4 ? " hot" : ""), transform:`translate(${x.toFixed(1)} ${y.toFixed(1)})`}, nd);
+    el("rect", {x:-56, y:-26, width:112, height:52, rx:12}, g);
+    const tt = el("text", {x:0, y:-3, "text-anchor":"middle"}, g); tt.textContent = t;
+    const ts = el("text", {x:0, y:14, "text-anchor":"middle", class:"s"}, g); ts.textContent = s;
+  });
+  if (!reduce){
+    // pulsos indo e voltando entre o hub e os sistemas
+    paths.forEach((d, i) => {
+      [0, 1].forEach(k => {
+        const c = el("circle", {r: k ? 3.2 : 4.2, class:"pulse", opacity: k ? .6 : 1}, pu);
+        const m = el("animateMotion", {dur:(2.6 + (i%3)*0.5) + "s", repeatCount:"indefinite", begin:(-(i*0.37 + k*1.3 + 0.05)).toFixed(2) + "s", path:d, keyPoints: k ? "1;0" : "0;1", keyTimes:"0;1", calcMode:"linear"}, c);
+      });
+    });
+  }
+
+  // ---------- conversa de IA aparecendo aos poucos ----------
+  const msgs = [...document.querySelectorAll("#chat .msg")];
+  const showChat = () => { msgs.forEach((m, i) => setTimeout(() => m.classList.add("on"), reduce ? 0 : 500 + i*1300)); };
+  if ("IntersectionObserver" in window){
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)){ showChat(); io.disconnect(); } }, {threshold:.3});
+    io.observe($("chat"));
+  } else showChat();
+
+  // ---------- painel de BI ----------
+  (function(){
+    const s = $("barc"), months = ["jun","jul","ago","set","out","nov"], rec = [880, 940, 1010, 980, 1145, 1240], cst = [640, 660, 700, 690, 785, 851];
+    const max = 1300, h = 105, x0 = 18, bw = 28, gap = 18;
+    [0, 650, 1300].forEach(v => { const y = 10 + h - v/max*h; el("line", {x1:x0, x2:296, y1:y, y2:y, stroke:"currentColor", "stroke-opacity":.12}, s); });
+    let pts = [];
+    rec.forEach((v, i) => {
+      const x = x0 + 8 + i*(bw+gap), bh = v/max*h;
+      el("rect", {x, y:10 + h - bh, width:bw, height:bh, rx:4, fill:"#457B9D"}, s);
+      const t = el("text", {x:x + bw/2, y:134, "text-anchor":"middle", "font-size":10, fill:"currentColor", "fill-opacity":.6}, s); t.textContent = months[i];
+      pts.push(`${x + bw/2},${(10 + h - cst[i]/max*h).toFixed(1)}`);
+    });
+    el("polyline", {points:pts.join(" "), fill:"none", stroke:"#2A9D8F", "stroke-width":2.5, "stroke-linejoin":"round"}, s);
+    pts.forEach(p => { const [x, y] = p.split(","); el("circle", {cx:x, cy:y, r:3, fill:"#2A9D8F"}, s); });
+    const dn = $("donut"), parts = [["Produtos", 52, "#1D3557"], ["Serviços", 30, "#2A9D8F"], ["Peças", 18, "#8FB8D6"]];
+    let a0 = -Math.PI/2; const cx = 52, cy = 66, r = 40;
+    parts.forEach(([n, v, col], i) => {
+      const a1 = a0 + v/100*2*Math.PI, large = a1 - a0 > Math.PI ? 1 : 0;
+      el("path", {d:`M${cx + r*Math.cos(a0)} ${cy + r*Math.sin(a0)} A${r} ${r} 0 ${large} 1 ${cx + r*Math.cos(a1)} ${cy + r*Math.sin(a1)}`, fill:"none", stroke:col, "stroke-width":16}, dn);
+      a0 = a1 + 0.03;
+      el("rect", {x:104, y:38 + i*22, width:9, height:9, rx:2, fill:col}, dn);
+      const t = el("text", {x:117, y:46 + i*22, "font-size":10, fill:"currentColor"}, dn); t.textContent = n + " " + v + "%";
+    });
+  })();
+
+  // ---------- simulador ----------
+  const INFRA = {none:[0,"—"], vmP:[290,"VM em nuvem P"], vmM:[540,"VM em nuvem M"], vmG:[990,"VM em nuvem G"], zP:[190,"Servidor Zirconium P"], zM:[340,"Servidor Zirconium M"], zG:[590,"Servidor Zirconium G"], loc:[390,"Servidor local gerenciado"], locR:[650,"Servidor local + locação de mini-servidor"]};
+  const SYSN = {erp:"ERP Dolibarr", crm:"CRM EspoCRM", proj:"OpenProject"};
+  let resumo = "";
+  function calc(){
+    const sys = [...document.querySelectorAll('input[name=sys]:checked')].map(i => i.value);
+    const aras = $("aras").checked; $("arasRow").hidden = !aras;
+    const users = Math.max(1, parseInt($("users").value) || 1), trein = Math.max(0, parseInt($("trein").value) || 0);
+    const L = [], M = []; let setup = 0, mes = 0, notes = [];
+    if (sys.length){
+      // 1 sistema: Essencial; 3 sistemas: Integrada; 2 sistemas: Essencial + 80% de outra Essencial (integração inclusa)
+      const base = sys.length === 1 ? 6900 : sys.length === 2 ? 12400 : 16900;
+      // acima de 10 usuários por sistema: +4 h por bloco de 10 usuários e sistema
+      const extra = users > 10 ? Math.ceil((users - 10)/10) * 4 * 180 * sys.length : 0;
+      setup += base + extra;
+      L.push([(sys.length === 3 ? "Implantação Integrada" : sys.length === 2 ? "Implantação de 2 sistemas integrados" : "Implantação Essencial") + " (" + sys.map(s => SYSN[s]).join(", ") + ")", base]);
+      if (extra) L.push(["Ajuste para " + users + " usuários", extra]);
+    }
+    if (aras){
+      const mods = Math.max(0, parseInt($("arasMod").value) || 0), cx = +$("arasCx").value;
+      setup += 9900; L.push(["Aras · desenho de processos PLM", 9900]);
+      if (mods){ setup += mods*cx; L.push(["Aras · " + mods + " módulo(s) customizado(s)", mods*cx]); }
+      notes.push("Licença Aras contratada pelo cliente.");
+    }
+    if ($("bi").checked){ setup += 2900; mes += 490; L.push(["BI de dados · setup", 2900]); M.push(["BI de dados", 490]); }
+    if ($("ia").checked){ setup += 6900; mes += 290; L.push(["Integração com IA · setup", 6900]); M.push(["IA · assinatura", 290]); notes.push("Consumo de API do modelo à parte, sem margem."); }
+    if (trein){ setup += trein*1200; L.push([trein + " turma(s) de treinamento", trein*1200]); }
+    const inf = INFRA[$("infra").value];
+    if (inf[0]){ setup += 690; mes += inf[0]; L.push(["Setup de ambiente", 690]); M.push([inf[1], inf[0]]); }
+    const gb = Math.max(0, parseInt($("bk").value) || 0);
+    if (gb){ const b = Math.max(60, gb*0.5); mes += b; M.push(["Backup externo " + gb + " GB", b]); }
+    const sup = +$("sup").value;
+    if (sup){ mes += sup; M.push([$("sup").selectedOptions[0].text.split(" · R$")[0].replace(/ · /, " "), sup]); }
+    if (users > 10 && sys.length){ const s = Math.max(250, users*25); mes += s; M.push(["Sustentação " + users + " usuários", s]); }
+    $("tSetup").textContent = brl(setup); $("tMes").textContent = brl(mes) + "/mês";
+    $("tLines").innerHTML = L.map(([n, v]) => `<div><span>${n}</span><span>${brl(v)}</span></div>`).join("") +
+      (M.length ? `<div style="margin-top:6px;color:var(--ink);font-weight:600"><span>Mensal</span><span></span></div>` : "") +
+      M.map(([n, v]) => `<div><span>${n}</span><span>${brl(v)}/mês</span></div>`).join("");
+    $("tNote").textContent = ["Valores de referência, sem impostos adicionais. Setup pago 50% na assinatura e 50% na entrega."].concat(notes).join(" ");
+    resumo = "Setup " + brl(setup) + " · mensal " + brl(mes) + " | " + L.map(([n, v]) => n + ": " + brl(v)).concat(M.map(([n, v]) => n + ": " + brl(v) + "/mês")).join("; ");
+  }
+  $("simf").addEventListener("input", calc); $("simf").addEventListener("change", calc); calc();
+  let usarSim = false;
+  $("useSim").addEventListener("click", () => {
+    usarSim = true; const t = $("simTag"); t.hidden = false; t.textContent = "Simulação anexada ao pedido: " + resumo;
+    if (!$("cu").value) $("cu").value = $("users").value;
+  });
+  document.querySelector('[data-preset="stack"]').addEventListener("click", () => {
+    document.querySelectorAll('input[name=sys]').forEach(i => i.checked = true);
+    $("aras").checked = false; $("bi").checked = false; $("ia").checked = false;
+    $("infra").value = "vmM"; $("sup").value = "690"; $("bk").value = 0; $("trein").value = 0; $("users").value = 10; calc();
+  });
+
+    // ---------- envio do orçamento pelo FormSubmit ----------
+  // Segue o caminho documentado pelo FormSubmit para anexos: formulário comum (POST multipart/form-data)
+  // com um campo de arquivo "attachment". Os arquivos do cliente vão juntos num único .zip, para não
+  // depender de extensões que o serviço possa recusar (STL, DXF, Gerber, KiCad, Eagle).
+  // Depois do envio o FormSubmit devolve o visitante para esta página (_next), com ?enviado=…
+  const MAX_ANEXO = 10 * 1024 * 1024; // limite do FormSubmit: 10 MB por envio
+  function mailtoLink(subject, body){ return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body); }
+  const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++){ let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+  const crc32 = u8 => { let c = 0xFFFFFFFF; for (let i = 0; i < u8.length; i++) c = CRC[(c ^ u8[i]) & 255] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; };
+  async function deflate(u8){
+    if (typeof CompressionStream === "undefined") return null;
+    try { const s = new Blob([u8]).stream().pipeThrough(new CompressionStream("deflate-raw")); return new Uint8Array(await new Response(s).arrayBuffer()); } catch(_){ return null; }
+  }
+  async function zipFiles(files, zipName){
+    const enc = new TextEncoder(), parts = [], central = []; let offset = 0;
+    const used = new Set();
+    for (const f of files){
+      let name = f.name; for (let k = 2; used.has(name); k++) name = f.name.replace(/(\.[^.]*)?$/, "-" + k + "$1"); used.add(name);
+      const raw = new Uint8Array(await f.arrayBuffer()), crc = crc32(raw), comp = await deflate(raw);
+      const method = comp && comp.length < raw.length ? 8 : 0, data = method ? comp : raw, nm = enc.encode(name);
+      const h = new DataView(new ArrayBuffer(30));
+      h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x0800, true); h.setUint16(8, method, true);
+      h.setUint16(10, 0, true); h.setUint16(12, 0x21, true); h.setUint32(14, crc, true); h.setUint32(18, data.length, true); h.setUint32(22, raw.length, true);
+      h.setUint16(26, nm.length, true); h.setUint16(28, 0, true);
+      parts.push(new Uint8Array(h.buffer), nm, data);
+      const c = new DataView(new ArrayBuffer(46));
+      c.setUint32(0, 0x02014b50, true); c.setUint16(4, 20, true); c.setUint16(6, 20, true); c.setUint16(8, 0x0800, true); c.setUint16(10, method, true);
+      c.setUint16(12, 0, true); c.setUint16(14, 0x21, true); c.setUint32(16, crc, true); c.setUint32(20, data.length, true); c.setUint32(24, raw.length, true);
+      c.setUint16(28, nm.length, true); c.setUint32(42, offset, true);
+      central.push(new Uint8Array(c.buffer), nm);
+      offset += 30 + nm.length + data.length;
+    }
+    const cdSize = central.reduce((s, p) => s + p.length, 0), e = new DataView(new ArrayBuffer(22));
+    e.setUint32(0, 0x06054b50, true); e.setUint16(8, files.length, true); e.setUint16(10, files.length, true); e.setUint32(12, cdSize, true); e.setUint32(16, offset, true);
+    return new File([...parts, ...central, new Uint8Array(e.buffer)], zipName, {type:"application/zip"});
+  }
+  const slug = s => String(s || "cliente").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^A-Za-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 40) || "cliente";
+  async function sendMail(fields, files, out, btn){
+    files = (Array.isArray(files) ? files : [files]).filter(Boolean);
+    const base = out.id === "formmsg" ? "formmsg" : "sendmsg", subject = fields._subject;
+    const names = files.map(f => f.name).join(", ");
+    const body = Object.entries(fields).filter(([k]) => !k.startsWith("_")).map(([k, v]) => k.replace(/_/g, " ") + ": " + v).join("\n");
+    const fallback = why => { out.className = base + " warn";
+      out.innerHTML = why + ` <a href="${mailtoLink(subject, body + (names ? "\n\n(anexe: " + names + ")" : ""))}">Abra o e-mail com o orçamento preenchido</a> ou escreva para <b>${EMAIL}</b>` + (names ? " anexando " + (files.length > 1 ? "os arquivos." : "o arquivo.") : "."); };
+    if (window.self !== window.top){ fallback("Na pré-visualização o envio direto fica bloqueado; no site publicado ele funciona."); return; }
+    const old = btn.textContent; btn.disabled = true; btn.textContent = files.length ? "Preparando arquivos…" : "Enviando…"; out.className = base; out.textContent = "";
+    let anexo = null, motivo = "";
+    if (files.length){
+      try { anexo = await zipFiles(files, slug(fields._origem) + "-" + slug(fields.Nome) + "-" + new Date().toISOString().slice(0, 10) + ".zip"); }
+      catch(e){ motivo = "não foi possível compactar os arquivos"; }
+      if (anexo && anexo.size > MAX_ANEXO){ motivo = "passam de 10 MB"; anexo = null; }
+    }
+    let canAttach = true; try { new DataTransfer(); } catch(_){ canAttach = false; }
+    if (anexo && !canAttach){ motivo = "este navegador não permite anexar"; anexo = null; }
+    const form = document.createElement("form");
+    form.method = "POST"; form.action = "https://formsubmit.co/" + EMAIL; form.enctype = "multipart/form-data"; form.acceptCharset = "UTF-8"; form.style.display = "none";
+    const add = (k, v) => { const i = document.createElement("input"); i.type = "hidden"; i.name = k; i.value = v; form.appendChild(i); };
+    const volta = location.href.split("#")[0].split("?")[0] + "?enviado=" + (base === "formmsg" ? "contato" : "orcamento") + (anexo ? "&anexo=" + encodeURIComponent(anexo.name) : "") + (motivo ? "&semanexo=" + encodeURIComponent(motivo) : "") + (base === "formmsg" ? "#contato" : "#orcamento");
+    Object.entries(fields).filter(([k]) => k !== "_origem").forEach(([k, v]) => add(k, v));
+    add("_next", volta); add("_template", "table"); add("_captcha", "false");
+    if (anexo){
+      add("Arquivos_anexados", names + " (dentro de " + anexo.name + ")");
+      const inp = document.createElement("input"); inp.type = "file"; inp.name = "attachment";
+      const dt = new DataTransfer(); dt.items.add(anexo); inp.files = dt.files; form.appendChild(inp);
+    } else if (files.length) add("Arquivos_nao_anexados", names + " (" + motivo + ")");
+    document.body.appendChild(form);
+    btn.textContent = "Enviando…";
+    try { form.submit(); } catch(e){ btn.disabled = false; btn.textContent = old; form.remove(); fallback("Não foi possível enviar daqui."); }
+  }
+  // volta do FormSubmit: mostra a confirmação
+  (function(){
+    const q = new URLSearchParams(location.search), tipo = q.get("enviado"); if (!tipo) return;
+    const out = document.getElementById(tipo === "contato" ? "formmsg" : "sendmsg"); if (!out) return;
+    const base = tipo === "contato" ? "formmsg" : "sendmsg", anexo = q.get("anexo"), sem = q.get("semanexo");
+    out.className = base + (sem ? " warn" : "");
+    out.innerHTML = (tipo === "contato" ? "Mensagem enviada." : "Pedido enviado" + (anexo ? " com os arquivos anexados (" + anexo.replace(/[<>&"]/g, "") + ")." : ".")) +
+      (sem ? ` Os arquivos não foram anexados (${sem.replace(/[<>&"]/g, "")}): envie-os para <b>${EMAIL}</b>.` : "") + " Respondemos em até 1 dia útil.";
+    try { history.replaceState(null, "", location.pathname + location.hash); } catch(_){}
+    setTimeout(() => out.scrollIntoView({block:"center"}), 300);
+  })();
+
+  // interesse vindo de uma página de sistema (?interesse=…)
+  (function(){ const v = new URLSearchParams(location.search).get("interesse"); if (!v) return;
+    const s = $("ci"); [...s.options].forEach(o => { if (o.text === v) s.value = o.text; }); })();
+
+  // ---------- formulário ----------
+  $("cform").addEventListener("submit", e => {
+    e.preventDefault();
+    const out = $("sendmsg"), n = $("cn").value.trim(), em = $("ce").value.trim();
+    if (!n || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){ out.className = "sendmsg warn"; out.textContent = "Preencha nome e um e-mail válido."; return; }
+    const fields = {_origem:"Engenhub", _subject:"Engenhub – " + $("ci").value + " – " + n + ($("cc").value ? " (" + $("cc").value + ")" : ""), _replyto:em,
+      Nome:n, Email:em, Empresa:$("cc").value || "—", Telefone:$("cp").value || "—", Interesse:$("ci").value, Usuarios:$("cu").value || "—",
+      Cenario:$("cm").value || "—"};
+    if (usarSim) fields.Simulacao = resumo;
+    sendMail(fields, [...$("cf").files], out, $("sendBtn"));
+  });
+})();
+</script>
+</body>
+</html>
